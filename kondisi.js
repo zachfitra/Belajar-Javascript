@@ -8,6 +8,9 @@
 
 // alert (`Saldo akhir anda adalah ${saldoAkhir}`);
 
-let hari = new Date () .getDay()
+let hari = new Date().getDay();
+let namaHari = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
 
-console.log('hari ini adalah hari ke' +hari)
+console.log('Hari ini adalah hari ' + namaHari[hari]);
+
+

@@ -29,6 +29,9 @@ document.title = ' belajar javascript'
 const defaultText = 'Klik saya 1'
 const defaultColor = 'green' 
 
+const defaultText2 = 'klik saya 2'
+btn2.textContent = defaultText2
+
 btn1.style.fontFamily = 'arial black'
 btn1.style.background = 'green' 
 
@@ -40,10 +43,24 @@ btn1.style.background = defaultColor
 function clickButton(){
     btn1.style.background = 'aqua'
     const newText = document.createElement('p')
-    newText.textContent = 'ahmad zaki'   
+    newText.textContent = prompt('Masukan nama anda')   
     body.append(newText)
 
 
+}
+
+function onmouseOut (){
+    const newText2 = document.createElement('p')
+    newText2.textContent = 'Ahmad Zaki Fitra'
+    body.append(newText2)
+
+    
+}
+
+function ubahWarna (){
+    const newText2 = document.createElement('p')
+    newText2.style.Color ='red'
+    body.append(newText2)
 }
 
 function gantiText(){
@@ -53,9 +70,4 @@ function gantiText(){
 function oriText(){
     btn1.textContent = defaultText
     btn1.style.background = defaultColor
-}
-
-function ubahWarna (){
-    text2.style.color ='red'
-
 }

@@ -23,11 +23,8 @@ document.title = ' belajar javascript'
  const btn1 = document.getElementById ('btn1')
  const btn2 = document.getElementById ('btn2')
  const text2 = document.getElementById('text2')
-
-
-
-const defaultText = 'Klik saya 1'
-const defaultColor = 'green' 
+ const defaultText = 'Klik saya 1'
+ const defaultColor = 'green' 
 
 const defaultText2 = 'klik saya 2'
 btn2.textContent = defaultText2
@@ -42,6 +39,7 @@ btn1.style.background = defaultColor
 
 function clickButton(){
     btn1.style.background = 'aqua'
+    btn2.style.background = 'aqua'
     const newText = document.createElement('p')
     newText.textContent = prompt('Masukan nama anda')   
     body.append(newText)
@@ -51,7 +49,7 @@ function clickButton(){
 
 function onmouseOut (){
     const newText2 = document.createElement('p')
-    newText2.textContent = 'Ahmad Zaki Fitra'
+    newText2.textContent = prompt('Masukan Nama anda')
     body.append(newText2)
 
     
@@ -59,7 +57,8 @@ function onmouseOut (){
 
 function ubahWarna (){
     const newText2 = document.createElement('p')
-    newText2.style.Color ='red'
+    newText2.textContent = ('Ahmad Zaki ')
+    newText2.style.color ='red'
     body.append(newText2)
 }
 
